@@ -38,10 +38,9 @@
   .glass::after{content:"";position:absolute;right:-28px;top:34px;width:26px;height:82px;border:3px solid var(--ink);border-left:none;border-radius:0 24px 24px 0}
   .beer{position:absolute;left:0;right:0;bottom:0;height:0;background:var(--coral);animation:fill 2s cubic-bezier(.6,0,.3,1) forwards}
   .beer::before{content:"";position:absolute;inset:0;background-image:radial-gradient(3px 3px at 25% 80%,#fff,transparent),radial-gradient(3px 3px at 65% 55%,#fff,transparent),radial-gradient(2.5px 2.5px at 45% 35%,#fff,transparent);animation:bub 1.3s linear infinite}
-  .foam{position:absolute;left:-5px;right:-5px;height:24px;bottom:0;opacity:0;background:radial-gradient(circle at 20% 60%,#fff 8px,transparent 9px),radial-gradient(circle at 50% 45%,#fff 10px,transparent 11px),radial-gradient(circle at 80% 60%,#fff 8px,transparent 9px),#fff;animation:foamUp 2s cubic-bezier(.6,0,.3,1) forwards}
+  .foam{position:absolute;top:-9px;left:-4px;right:-4px;height:16px;background:#fff;border-radius:50% 50% 42% 42%;box-shadow:0 -3px 0 #fff}
   .loadword{font-family:var(--disp);font-weight:800;font-size:18px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
-  @keyframes fill{0%,12%{height:0}100%{height:86%}}
-  @keyframes foamUp{0%,18%{opacity:0;bottom:0}34%{opacity:1}100%{opacity:1;bottom:80%}}
+  @keyframes fill{from{height:0}to{height:84%}}
   @keyframes bub{to{transform:translateY(-36px)}}
 
   /* ---------- NAV ---------- */
